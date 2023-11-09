@@ -3,8 +3,8 @@ Minimum required libraries in ccp4-7.0 for building LAUEGEN
 
 # Installation
 
-wget -c https://raw.githubusercontent.com/lzp2022/ccp4-7.0-lib4laue/main/build-lauegen
+  wget -c https://raw.githubusercontent.com/lzp2022/ccp4-7.0-lib4laue/main/build-lauegen
 
-chmod +x build-lauegen
+  chmod +x build-lauegen
 
-./build-lauegen
+  ./build-lauegen
