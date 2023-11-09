@@ -2,7 +2,7 @@
 
 wget -c https://www.chess.cornell.edu/sites/default/files/inline-files/Daresbury_laue.tar.gz
 wget -c https://raw.githubusercontent.com/lzp2022/ccp4-7.0-lib4laue/main/ccp4-7.0-lib4laue.tar.bz2
-tar xvf Daresbury_laue_Dec2020.tar.gz
+tar xvf Daresbury_laue.tar.gz
 tar xvf ccp4-7.0-lib4laue.tar.bz2 
 cd ccp4-7.0-lib4laue
 ./build libccp4 tiff xdl-view jwc-f
