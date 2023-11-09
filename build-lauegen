@@ -1,0 +1,25 @@
+wget -c https://www.chess.cornell.edu/sites/default/files/inline-files/Daresbury_laue.tar.gz
+wget -c https://github.com/lzp2022/ccp4-7.0-lib4laue/blob/main/ccp4-7.0-lib4laue.tar.bz2
+tar xvf Daresbury_laue_Dec2020.tar.gz
+tar xvf ccp4-7.0-lib4laue.tar.bz2 
+cd ccp4-7.0-lib4laue
+./build libccp4 tiff xdl-view jwc-f
+cp ccp4-7.0/include/tiff* ../Daresbury_laue/lib/src
+cd ..
+pwd=$(pwd)
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$pwd/ccp4-7.0-lib4laue/ccp4-7.0/lib
+cd Daresbury_laue
+./configure --with-ccp4=$pwd/ccp4-7.0-lib4laue/ccp4-7.0 --prefix=$pwd/lauegen
+make -j4
+make install
+cp $pwd/ccp4-7.0-lib4laue/ccp4-7.0/lib/*.so* $pwd/lauegen/lib/
+cd ../
+echo '
+export PATH=$PATH:'$PWD'/lauegen/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:'$PWD'/lauegen/lib
+export SYMOP='$PWD'/lauegen/share/laue/symop.lib
+' >>~/.bashrc
+
+rm -rf Daresbury_laue ccp4-7.0-lib4laue
+
+exit 
