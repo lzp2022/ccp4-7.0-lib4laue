@@ -3,9 +3,11 @@ Minimum required libraries in ccp4-7.0 for building LAUEGEN
 
 # Installation
 **Centos_7.9 (come with py27)**
+
 `yum install gcc-c++ gcc-gfortran m4 libXt-devel xorg-x11-fonts-75dpi`
 
 **Ubuntu_22.04**
+
 `sudo apt install python2.7 gfortran g++ m4 make libxt-devel xfonts-75dp`
 
 
