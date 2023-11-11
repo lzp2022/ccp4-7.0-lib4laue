@@ -13,7 +13,7 @@ Install dependants:
 `sudo apt install python2.7 gfortran g++ m4 make libxt-devel xfonts-75dp`
 #
 Download build script and build LAUEGEN with ccp4-7.0 minimum libraries.
-#
+
   `wget -c https://raw.githubusercontent.com/lzp2022/ccp4-7.0-lib4laue/main/build-lauegen`
   
   `cat build-lauegen | tr '\r' ' ' > build`
