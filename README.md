@@ -10,7 +10,8 @@ Install dependencies:
 
 **Ubuntu_22.04**
 
-`sudo apt install python2.7 gfortran g++ m4 make ` \n
+`sudo apt install python2.7 gfortran g++ m4 make ` 
+
 `sudo apt install libxt-devel xfonts-75dp`
 #
 Download build script and build LAUEGEN with ccp4-7.0 minimum libraries:
