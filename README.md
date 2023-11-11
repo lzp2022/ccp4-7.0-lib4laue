@@ -5,4 +5,6 @@ Minimum required libraries in ccp4-7.0 for building LAUEGEN
 
   `wget -c https://raw.githubusercontent.com/lzp2022/ccp4-7.0-lib4laue/main/build-lauegen`
   
-  `sh build-lauegen`
+  `cat build-lauegen | tr '\r' ' ' > build`
+
+  `sh build`
