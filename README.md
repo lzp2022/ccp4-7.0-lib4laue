@@ -22,11 +22,6 @@ Download build script and build LAUEGEN with ccp4-7.0 minimum libraries.
 #
 
 
-#
-
-
-
-
 **Citation:**
 
 https://doi.org/10.1107/S1600577521001326
