@@ -22,6 +22,7 @@ Minimum required libraries in ccp4-7.0 for building LAUEGEN
 
 
 **Citation:**
+
 https://doi.org/10.1107/S1600577521001326
 
 The Daresbury_Laue software source code (identical versions) may be downloaded from any one of the following three weblinks:
